@@ -1,5 +1,35 @@
-### Health Check
-GET http://localhost:3000/health
+### Root endpoint
+GET http://localhost:8080/
+Accept: application/json
+
+###
+
+### Get trending movies (page 1)
+GET http://localhost:8080/api/trending
+Accept: application/json
+
+###
+
+### Get trending movies (page 2)
+GET http://localhost:8080/api/trending?page=2
+Accept: application/json
+
+###
+
+### Search content
+GET http://localhost:8080/api/search?query=Inception
+Accept: application/json
+
+###
+
+### Search content with pagination
+GET http://localhost:8080/api/search?query=Matrix&page=1
+Accept: application/json
+
+###
+
+### Get movie videos by ID
+GET http://localhost:8080/api/movie/550/videos
 Accept: application/json
 
 ###
